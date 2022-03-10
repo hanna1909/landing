@@ -1,0 +1,102 @@
+/* Write some CSS below */
+body {
+  font-family: Overpass;
+  color: #404042;
+  font-size: 18px;
+}
+
+
+
+h1{
+color: white;
+}
+
+
+h1, h2, h3 {
+  font-family: Chivo;
+}
+
+a {
+  color: white;
+  background-color: #1A48E3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #1A48E3;
+}
+
+/*div	{
+	background-color: lightgrey;
+	height: 60px;
+	width: 150px;
+	margin-top: 20px;
+	padding-top: 30px;
+	border: 1px dashed dimgrey;
+	border-radius: 2px;
+	}
+*/
+
+.banner {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/background.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 150px 0;
+	text-align: center;
+	color: white;
+}
+
+.button-blue {
+	background-color: #1A48E3;
+	padding: 16px 48px;
+	margin-top: 30px; /*doesn't work here*/
+	display: inline-block; /*this works*/
+	border-radius: 5px;
+
+}
+
+.card-white {
+	background-color: white;
+	box-shadow: 0 0 16px lightgrey;  /*to have a glow around the "box"*/
+	width: 200px; /*image still aren't in the box*/
+	border: 1px lightgrey ;
+	border-radius: 2px;
+}
+
+.card-white img  {
+	width: 200px; /*now they are*/
+	border-radius: 2px;
+}
+
+
+.footer{
+background-color: grey;
+
+	}
+.footer p {
+	text-align: center;
+	color: white;
+	}
+
+.cards{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; /*3 colonnes*/
+	grid-gap: 16px;
+	 place-items:  center;
+	}
+
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr; /*passer tt sur une colonne si pas de place*/
+  }
+}
+
+  .card-white {
+    width: auto;
+  }
+}
+  
